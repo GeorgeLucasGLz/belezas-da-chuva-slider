@@ -1,3 +1,5 @@
+
+
 const TOTAL_SLIDES = 8
 let currentIndex = 0
 
@@ -38,3 +40,29 @@ dots.forEach((dot, index) => {
 })
 
 
+// const rains = document.querySelectorAll(".rain")
+// const getRandomNumber = (min, max) =>{
+
+//     return Math.floor(Math.random() * (max - min + 1) + min)
+// }
+
+// rains.forEach(rain => {
+//     rain.style = `--rain-delay:${getRandomNumber(0, 1000)}ms`
+// })
+
+
+
+const audio = document.getElementById("audioPlayer");
+const muteButton = document.getElementById("muteButton");
+
+muteButton.addEventListener("click", () => {
+  if (audio.muted) {
+    audio.muted = false;
+    muteButton.classList.remove("muted");
+    
+  } else {
+    audio.muted = true;
+    muteButton.classList.add("muted");
+   
+  }
+});

@@ -9,12 +9,30 @@
 </head>
 
 <body>
+    <div class="mascara"></div>
+
+    <div class="caixa-video">
+        <video controls autoplay muted loop>
+            <source src="./img/animeRain.mp4">
+            </source>
+        </video>
+    </div>
+
+
 
     <div class="container">
 
-        <h1>Belezas da Chuva</h1>
-        <p><a href="https://georgelucasglz.github.io/My-Porfolio-George-Lucas/" target="_blank">@GeorgeLucas</a></p>
+        <div class="info">
+            <h1>Belezas da Chuva</h1>
+            <p><a href="https://georgelucasglz.github.io/My-Porfolio-George-Lucas/" target="_blank">@GeorgeLucas</a></p>
+            <audio id="audioPlayer" autoplay loop>
+                <source src="./img/music.mp3" type="audio/mpeg">
+                Seu navegador não suporta o elemento de áudio.
+            </audio>
+            <button id="muteButton"></button>
+        </div>
         <div class="images">
+
 
             <img src="img/leaf.jpg" alt="" class="active">
             <img src="img/chinaRain.jpg" alt="">
@@ -45,6 +63,8 @@
         <button id="next" onclick="next()">&gt;
         </button>
     </div>
+
+
 
 
 

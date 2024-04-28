@@ -8,64 +8,74 @@
     <title>Image Slider | George Lucas</title>
 </head>
 
-<body>
+<body onload="loading()">
+
+    <div class="box-load">
+        <div class="pre">
+
+        </div>
+        <p>Carregando Belezas da Chuva</p>
+    </div>
     <div class="mascara"></div>
 
-    <div class="caixa-video">
-        <video autoplay muted loop id="videoPlayer">
-            <source src="./img/animeRain.mp4" type="video/mp4">
-            </source>
-        </video>
-    </div>
+    <main id="main">
 
-    
-    <div class="container">
-
-        <div class="info">
-            <h1>Belezas da Chuva</h1>
-            <p><a href="https://georgelucasglz.github.io/My-Porfolio-George-Lucas/" target="_blank">@GeorgeLucas</a></p>
-            <audio id="audioPlayer" autoplay loop muted>
-                <source src="./img/music.mp3" type="audio/mpeg">
-                Seu navegador não suporta o elemento de áudio.
-            </audio>
-            <button id="muteButton"></button>
-        </div>
-        <div class="images">
-
-
-            <img src="img/leaf.jpg" alt="" class="active">
-            <img src="img/chinaRain.jpg" alt="">
-            <img src="img/cityRain.jpg" alt="">
-            <img src="img/rain1.jpg" alt="">
-            <img src="img/forest3.jpg" alt="">
-            <img src="img/horse1.jpg" alt="">
-            <img src="img/night.jpg" alt="">
-            <img src="img/forest2.jpg" alt="">
-
-
-
+        <div class="caixa-video">
+            <video autoplay muted loop id="videoPlayer">
+                <source src="./img/animeRain.mp4" type="video/mp4">
+                </source>
+            </video>
         </div>
 
-        <div class="dots">
-            <button onclick="dot(1)"></button>
-            <button onclick="dot(2)"></button>
-            <button onclick="dot(3)"></button>
-            <button onclick="dot(4)"></button>
-            <button onclick="dot(5)"></button>
-            <button onclick="dot(6)"></button>
-            <button onclick="dot(7)"></button>
-            <button onclick="dot(8)"></button>
 
+        <div class="container">
+
+            <div class="info">
+                <h1>Belezas da Chuva</h1>
+                <p><a href="https://georgelucasglz.github.io/My-Porfolio-George-Lucas/" target="_blank">@GeorgeLucas</a>
+                </p>
+                <audio id="audioPlayer" autoplay loop muted>
+                    <source src="./img/music.mp3" type="audio/mpeg">
+                    Seu navegador não suporta o elemento de áudio.
+                </audio>
+                <button id="muteButton"></button>
+            </div>
+            <div class="images">
+
+
+                <img src="img/leaf.jpg" alt="" class="active">
+                <img src="img/chinaRain.jpg" alt="">
+                <img src="img/cityRain.jpg" alt="">
+                <img src="img/rain1.jpg" alt="">
+                <img src="img/forest3.jpg" alt="">
+                <img src="img/horse1.jpg" alt="">
+                <img src="img/night.jpg" alt="">
+                <img src="img/forest2.jpg" alt="">
+
+
+
+            </div>
+
+            <div class="dots">
+                <button onclick="dot(1)"></button>
+                <button onclick="dot(2)"></button>
+                <button onclick="dot(3)"></button>
+                <button onclick="dot(4)"></button>
+                <button onclick="dot(5)"></button>
+                <button onclick="dot(6)"></button>
+                <button onclick="dot(7)"></button>
+                <button onclick="dot(8)"></button>
+
+            </div>
+            <button id="prev" onclick="prev()">&lt;
+            </button>
+            <button id="next" onclick="next()">&gt;
+            </button>
         </div>
-        <button id="prev" onclick="prev()">&lt;
-        </button>
-        <button id="next" onclick="next()">&gt;
-        </button>
-    </div>
 
 
 
-
+    </main>
 
 
     <script src="scripts.js"></script>

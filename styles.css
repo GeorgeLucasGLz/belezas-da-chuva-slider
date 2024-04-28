@@ -7,6 +7,51 @@
 }
 
 
+@keyframes load {
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.box-load {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    background-image: linear-gradient(to bottom, #024dbc, #0068c9, #0080cf, #0095ce, #1ea9cc);
+    min-width: 100%;
+    min-height: 100%;
+    position: absolute;
+    top: 0;
+
+
+}
+
+.pre {
+
+    
+    width: 80px;
+    height: 80px;
+    background-image: url("https://ilustracode.com.br/assets/images/load.png");
+    background-position: center;
+    background-size: contain;
+    animation: load 2s infinite linear;
+}
+
+
+.box-load p {
+    margin-top: 10px;
+    font-family: "Lobster", sans-serif;
+    font-weight: 400;
+    font-size: 25px;
+    color: white;
+    max-width: 50%;
+    text-align: center;
+
+}
+
 body {
 
     height: 100vh;
@@ -74,6 +119,14 @@ body {
     padding: 20px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.45);
 
+
+}
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: none;
 
 }
 
@@ -273,7 +326,7 @@ body {
         min-width: 300px;
     }
 
-    
+
 }
 
 @media screen and (min-width: 0px) and (max-width: 350px) {
@@ -318,5 +371,8 @@ body {
     .container button#next {
         right: -22px;
     }
+
+
+
 
 }

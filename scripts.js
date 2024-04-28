@@ -52,17 +52,21 @@ dots.forEach((dot, index) => {
 
 
 
-const audio = document.getElementById("audioPlayer");
-const muteButton = document.getElementById("muteButton");
-
-muteButton.addEventListener("click", () => {
-  if (audio.muted) {
-    audio.muted = false;
-    muteButton.classList.remove("muted");
-    
-  } else {
-    audio.muted = true;
-    muteButton.classList.add("muted");
-   
-  }
-});
+document.addEventListener("DOMContentLoaded", function() {
+    const video = document.getElementById("videoPlayer");
+    const muteButton = document.getElementById("muteButton");
+  
+    muteButton.addEventListener("click", () => {
+      if (video.muted) {
+        video.muted = false;
+        muteButton.textContent = "🔊";
+      } else {
+        video.muted = true;
+        muteButton.textContent = "🔇";
+      }
+    });
+  
+    // Inicie com o vídeo reproduzindo e mutado
+    video.play();
+    muteButton.textContent = "🔇";
+  });

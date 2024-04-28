@@ -25,7 +25,7 @@ body {
     left: 0;
 }
 
-video {
+#videoPlayer video {
     position: absolute;
     top: 0;
     left: 0;
@@ -47,28 +47,20 @@ video {
     background-color: rgba(0, 0, 0, 0.5);
 }
 
-#audioPlayer {
-    display: none; /* oculta o elemento de áudio */
-  }
+
   
   #muteButton {
-    top: 20px;
-    right: 10px;
     position: absolute;
+    top: 20px;
+    right: 20px;
     background-color: transparent;
     border: none;
     cursor: pointer;
     font-size: 20px;
     color: #333;
   }
-  
-  #muteButton::after {
-    content: "🔊"; /* ícone de normal */
-  }
-  
-  #muteButton.muted::after {
-    content: "🔇"; /* ícone de mutado */
-  }
+
+
 
 .container {
     z-index: 2;
@@ -244,7 +236,7 @@ video {
    
     
     .container .images img {
-        margin-top: 20px;
+        margin-top: 15px;
         height: 420px;
         
     
@@ -261,7 +253,7 @@ video {
 
     
     .container .images img {
-        margin-top: 15px;
+      
         height: 420px;
         
     

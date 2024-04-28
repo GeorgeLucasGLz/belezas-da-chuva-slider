@@ -18,7 +18,7 @@ body {
 
 }
 
-.caixa-video{
+.caixa-video {
     position: fixed;
     z-index: -1;
     top: 0;
@@ -32,9 +32,9 @@ body {
     z-index: 0;
     min-width: 100%;
     min-height: 100%;
-    
-    
-   
+
+
+
 }
 
 .mascara {
@@ -48,8 +48,8 @@ body {
 }
 
 
-  
-  #muteButton {
+
+#muteButton {
     position: absolute;
     top: 20px;
     right: 20px;
@@ -58,7 +58,7 @@ body {
     cursor: pointer;
     font-size: 20px;
     color: #333;
-  }
+}
 
 
 
@@ -73,7 +73,7 @@ body {
     border-radius: 8px;
     padding: 20px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.45);
-    margin-bottom: 10px;
+
 
 }
 
@@ -228,18 +228,18 @@ body {
 
 
     .container {
-       
+
         min-width: 400px;
         height: 580px;
     }
 
-   
-    
+
+
     .container .images img {
         margin-top: 15px;
         height: 420px;
-        
-    
+
+
     }
 }
 
@@ -251,12 +251,18 @@ body {
     }
 
 
-    
+
     .container .images img {
-      
+
         height: 420px;
-        
-    
+    }
+
+    .container button#prev {
+        left: -10px;
+    }
+
+    .container button#next {
+        right: -10px;
     }
 }
 
@@ -266,6 +272,8 @@ body {
 
         min-width: 300px;
     }
+
+    
 }
 
 @media screen and (min-width: 0px) and (max-width: 350px) {
@@ -280,22 +288,22 @@ body {
 
         min-width: 280px;
     }
-    
+
 }
 
 @media screen and (min-width: 0px) and (max-width: 320px) {
 
     .container {
-
+        margin-top: 15px;
         min-width: 250px;
         height: 420px;
     }
 
     .container .images img {
-       
+
         height: 320px;
-        
-    
+
+
     }
 
     .container .dots {
